@@ -6,6 +6,10 @@ An "Activate Windows"-style watermark for the COSMIC™ desktop: a native port o
 [Activate Linux for GNOME](https://github.com/bbbenji/gnome-shell-extension-activate-linux).
 It is a community project and is not affiliated with or endorsed by System76.
 
+<img src="resources/screenshots/watermark.png" alt="The watermark in the corner of the screen" width="420" />
+
+<img src="resources/screenshots/settings.png" alt="The settings app" width="420" />
+
 ## Features
 
 - Custom main and secondary text with placeholders

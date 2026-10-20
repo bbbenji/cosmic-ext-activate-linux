@@ -9,15 +9,27 @@
     <p>Adds a customisable "Activate COSMIC" watermark to the corner of your screen. Choose the text (with placeholders for your OS, kernel and session), font, colour, corner, displays, and whether it sits on the desktop, over windows, or on the lock screen.</p>
   </description>
   <icon type="remote" width="256" height="256" scale="1">https://github.com/bbbenji/cosmic-ext-activate-linux/raw/master/resources/icons/hicolor/256x256/apps/io.github.bbbenji.ActivateLinux.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <caption>The watermark in the corner of the screen</caption>
+      <image>https://raw.githubusercontent.com/bbbenji/cosmic-ext-activate-linux/master/resources/screenshots/watermark.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The settings app</caption>
+      <image>https://raw.githubusercontent.com/bbbenji/cosmic-ext-activate-linux/master/resources/screenshots/settings.png</image>
+    </screenshot>
+  </screenshots>
+  <developer id="io.github.bbbenji">
+    <name>Benji</name>
+  </developer>
+  <url type="homepage">https://github.com/bbbenji/cosmic-ext-activate-linux</url>
   <url type="vcs-browser">https://github.com/bbbenji/cosmic-ext-activate-linux</url>
   <url type="bugtracker">https://github.com/bbbenji/cosmic-ext-activate-linux/issues</url>
   <launchable type="desktop-id">io.github.bbbenji.ActivateLinux.desktop</launchable>
   <provides>
     <id>com.system76.CosmicApplication</id>
-    <binaries>
-      <binary>cosmic-ext-activate-linux</binary>
-      <binary>cosmic-ext-activate-linux-daemon</binary>
-    </binaries>
+    <binary>cosmic-ext-activate-linux</binary>
+    <binary>cosmic-ext-activate-linux-daemon</binary>
   </provides>
   <requires>
     <display_length compare="ge">360</display_length>
@@ -36,4 +48,7 @@
     <keyword>watermark</keyword>
   </keywords>
   <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.1.0" date="2026-10-20" />
+  </releases>
 </component>
