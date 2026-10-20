@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Activate Linux
+Comment=Configure the Activate Linux watermark
+Type=Application
+Icon=io.github.bbbenji.ActivateLinux
+Exec=cosmic-ext-activate-linux
+Terminal=false
+StartupNotify=true
+Categories=Settings;DesktopSettings;COSMIC;
+Keywords=watermark;activate;linux;

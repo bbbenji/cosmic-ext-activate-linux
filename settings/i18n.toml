@@ -1,0 +1,6 @@
+fallback_language = "en"
+
+[fluent]
+assets_dir = "i18n"
+# xdgen (build.rs) always looks for the package name with underscores.
+domain = "cosmic_ext_activate_linux"

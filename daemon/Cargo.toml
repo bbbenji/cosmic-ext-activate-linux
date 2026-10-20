@@ -1,0 +1,18 @@
+[package]
+name = "cosmic-ext-activate-linux-daemon"
+description = "Draws the Activate Linux watermark on the COSMIC desktop"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+activate-linux-config.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[dependencies.libcosmic]
+workspace = true
+# No "wgpu": tiny-skia software rendering keeps the always-running daemon small.
+features = ["autosize", "dbus-config", "multi-window", "single-instance", "tokio", "wayland", "winit"]

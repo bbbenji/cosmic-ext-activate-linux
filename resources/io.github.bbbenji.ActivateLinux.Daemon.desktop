@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Activate Linux watermark
+Comment=Draws the Activate Linux watermark
+Exec=cosmic-ext-activate-linux-daemon
+Icon=io.github.bbbenji.ActivateLinux
+OnlyShowIn=COSMIC;
+NoDisplay=true

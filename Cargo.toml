@@ -1,0 +1,31 @@
+[workspace]
+resolver = "3"
+members = ["config", "daemon", "settings"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/bbbenji/cosmic-ext-activate-linux"
+
+[workspace.dependencies]
+activate-linux-config = { path = "config" }
+cosmic-config = { git = "https://github.com/pop-os/libcosmic", rev = "430f3d48a97d8779f9c1985473912e594ccca1ae", default-features = false, features = ["macro"] }
+libcosmic = { git = "https://github.com/pop-os/libcosmic", rev = "430f3d48a97d8779f9c1985473912e594ccca1ae", default-features = false }
+serde = { version = "1", features = ["derive"] }
+ron = "0.12"
+rustix = { version = "1", features = ["system"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tempfile = "3"
+zbus = { version = "5.15", default-features = false, features = ["tokio"] }
+dirs = "6"
+i18n-embed = { version = "0.16", features = ["fluent-system", "desktop-requester"] }
+i18n-embed-fl = "0.10"
+rust-embed = "8.8"
+open = "5.3"
+xdgen = "0.1"
+
+[profile.release]
+lto = "thin"

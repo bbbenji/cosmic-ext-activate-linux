@@ -1,0 +1,33 @@
+[package]
+name = "cosmic-ext-activate-linux"
+description = "Settings for the Activate Linux watermark, for the COSMIC™ desktop"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+activate-linux-config.workspace = true
+dirs.workspace = true
+i18n-embed.workspace = true
+i18n-embed-fl.workspace = true
+open.workspace = true
+rust-embed.workspace = true
+tokio = { version = "1", features = ["time"] }
+tracing.workspace = true
+tracing-subscriber.workspace = true
+zbus.workspace = true
+
+[dependencies.libcosmic]
+workspace = true
+features = [
+    "a11y", "about", "dbus-config", "multi-window", "process", "single-instance",
+    "tokio", "wayland", "wgpu", "winit",
+]
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[build-dependencies]
+xdgen.workspace = true

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.bbbenji.ActivateLinux</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Activate Linux</name>
+  <summary>An "Activate Windows"-style watermark for the COSMIC™ desktop</summary>
+  <description>
+    <p>Adds a customisable "Activate COSMIC" watermark to the corner of your screen. Choose the text (with placeholders for your OS, kernel and session), font, colour, corner, displays, and whether it sits on the desktop, over windows, or on the lock screen.</p>
+  </description>
+  <icon type="remote" width="256" height="256" scale="1">https://github.com/bbbenji/cosmic-ext-activate-linux/raw/master/resources/icons/hicolor/256x256/apps/io.github.bbbenji.ActivateLinux.png</icon>
+  <url type="vcs-browser">https://github.com/bbbenji/cosmic-ext-activate-linux</url>
+  <url type="bugtracker">https://github.com/bbbenji/cosmic-ext-activate-linux/issues</url>
+  <launchable type="desktop-id">io.github.bbbenji.ActivateLinux.desktop</launchable>
+  <provides>
+    <id>com.system76.CosmicApplication</id>
+    <binaries>
+      <binary>cosmic-ext-activate-linux</binary>
+      <binary>cosmic-ext-activate-linux-daemon</binary>
+    </binaries>
+  </provides>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </supports>
+  <categories>
+    <category>COSMIC</category>
+    <category>Settings</category>
+  </categories>
+  <keywords>
+    <keyword>COSMIC</keyword>
+    <keyword>watermark</keyword>
+  </keywords>
+  <content_rating type="oars-1.1" />
+</component>

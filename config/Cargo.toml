@@ -1,0 +1,22 @@
+[package]
+name = "activate-linux-config"
+description = "Settings model shared by the Activate Linux daemon and settings app"
+publish = false
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[lib]
+name = "activate_linux_config"
+
+[dependencies]
+cosmic-config.workspace = true
+serde.workspace = true
+rustix.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+ron.workspace = true
+tempfile.workspace = true
