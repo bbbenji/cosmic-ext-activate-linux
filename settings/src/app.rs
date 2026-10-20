@@ -272,6 +272,9 @@ impl cosmic::Application for App {
 
 impl App {
     fn set_title(&mut self) -> Task<Message> {
+        // The header bar draws its own title; set_window_title only names the
+        // window for the compositor (taskbar, alt-tab).
+        self.set_header_title(fl!("app-title"));
         match self.core.main_window_id() {
             Some(id) => self.set_window_title(fl!("app-title"), id),
             None => Task::none(),
